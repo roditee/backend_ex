@@ -1,0 +1,32 @@
+package sec04;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class MemberDAO {
+	// DB 연결 담당 메소드 : DB 연결하고 Connection 객체 반환
+	private Connection connDB() {
+		Connection con = null;
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			String url = "jdbc:mysql://localhost:3306/servletdb?serverTimezone=UTC";
+			String user = "root";
+			String pwd = "1234";
+			
+			con = DriverManager.getConnection(url, user, pwd);
+			
+			if(con != null) {
+				System.out.println("DB 연결 성공!");
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return con;		
+	}
+	
+	// 회원 정보 조회 메소드 (전체 회원 정보 SELECT 해서 반환)
+}
