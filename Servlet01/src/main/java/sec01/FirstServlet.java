@@ -27,8 +27,6 @@ public class FirstServlet extends HttpServlet {
 	 */
 	public void destroy() {
 		System.out.println("destory 메소드 호출");
-		
-		
 	}
 
 	/**
