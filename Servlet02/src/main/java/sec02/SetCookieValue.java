@@ -27,7 +27,7 @@ public class SetCookieValue extends HttpServlet {
 		Cookie cookie = new Cookie("cookieTest", URLEncoder.encode("Cookie 테스트입니다.", "utf-8"));
 		cookie.setMaxAge(24*60*60); // 유효기간 설정 : 하루 = 24시간 * 60분 * 60초
 		response.addCookie(cookie); // 생성한 쿠키를 브라우저로 전송하여 저장
-		out.println("현재 시간 : " + d); // 
+		out.println("현재 시간 : " + d);
 		out.println("<br> Cookie에 저장");
 	}
 

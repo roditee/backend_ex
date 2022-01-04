@@ -22,10 +22,10 @@ public class LoginHiddenServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		String user_id = request.getParameter("user_id");
-		String user_pw = request.getParameter("user_id");
-		String user_address = request.getParameter("user_id");
-		String user_email = request.getParameter("user_id");
-		String user_hp = request.getParameter("user_id");
+		String user_pw = request.getParameter("user_pw");
+		String user_address = request.getParameter("user_address");
+		String user_email = request.getParameter("user_email");
+		String user_hp = request.getParameter("user_hp");
 		
 		String data = "<html><body>";
 		data+="안녕하세요!<br> 로그인하셨습니다.<br><br>";
